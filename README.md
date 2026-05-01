@@ -62,9 +62,9 @@ Reducing radiation exposure in CT imaging (low-dose CT) introduces significant n
 ## 🚀 How to Run
 
 ```bash
-git clone https://github.com/your-username/CT-Image-Denoising-U-Net.git
-cd CT-Image-Denoising-U-Net
-pip install -r requirements.txt
+git clone https://github.com/your-username/CT-Image-Denoising-U-Net.git 
+cd CT-Image-Denoising-U-Net              
+pip install -r requirements.txt 
 
 🎯 Key Features
 - Patch-based training and reconstruction
