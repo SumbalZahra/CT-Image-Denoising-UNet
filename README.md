@@ -1,5 +1,3 @@
-# CT-Image-Denoising-UNet
-
 # CT Image Denoising using U-Net (Deep Learning)
 
 ## 📌 Overview
@@ -60,5 +58,25 @@ Low-dose CT scans reduce radiation exposure but introduce significant noise, aff
 ## 🚀 How to Run
 
 1. Clone repository:
-```bash
-git clone https://github.com/your-username/CT-Image-Denoising-U-Net.git
+  git clone https://github.com/your-username/CT-Image-Denoising-U-Net.git
+
+2. Install dependencies:
+pip install -r requirements.txt
+3. Run notebook:
+- Open notebooks/training.ipynb
+
+🎯 Key Features
+- Patch-based training and reconstruction
+- Overlapping patch strategy
+- U-Net architecture for medical imaging
+- Full-image reconstruction pipeline
+
+📌 Future Improvements
+- Add PSNR and SSIM evaluation
+- Compare with baseline filters
+- Improve architecture (Attention U-Net)
+- Extend to real low-dose CT datasets
+👩‍💻 Author
+
+Biomedical Engineering Graduate
+Focused on AI in Healthcare & Medical Imaging
