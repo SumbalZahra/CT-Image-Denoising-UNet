@@ -42,43 +42,61 @@ Reducing radiation exposure in CT imaging (low-dose CT) introduces significant n
 
 ### Visual Results
 
+## 📈 Evaluation Metrics
+
+| Metric | Before (Noisy) | After (Denoised) | Improvement |
+|--------|----------------|------------------|------------|
+| PSNR (dB) | 26.84 | 39.74 | +12.9 dB |
+| SSIM | 0.40 | 0.95 | +0.55 |
+
+---
+
 | Noisy Input | Model Output | Ground Truth |
 |------------|-------------|--------------|
 | ![](results/noisy.png) | ![](results/output.png) | ![](results/clean.png) |
 
 ---
+## 🧠 Interpretation
 
-## 📈 Evaluation Metrics
+- Significant noise reduction is observed, with PSNR improving by approximately 13 dB.
+- Strong structural preservation is achieved, as indicated by the SSIM increase toward 1.
 
-| Metric | Noisy Input | Model Output |
-|--------|------------|--------------|
-| PSNR   | 26.83      | (to be updated) |
-| SSIM   | 0.40       | (to be updated) |
+The model demonstrates a clear improvement in image quality and structural fidelity after denoising.
 
-> The model demonstrates significant improvement in structural preservation and noise reduction (quantitative results to be finalized).
-
+Overall, the model:
+- effectively removes noise from low-dose CT images  
+- preserves important anatomical and structural details  
+- reconstructs high-quality, diagnostically meaningful images  
 ---
 
 ## 🚀 How to Run
 
 ```bash
-git clone https://github.com/your-username/CT-Image-Denoising-U-Net.git 
+git clone https://github.com/your-username/CT-Image-Denoising-U-Net.git  
 cd CT-Image-Denoising-U-Net              
-pip install -r requirements.txt 
-
-🎯 Key Features
+pip install -r requirements.txt
+Run notebook:
+   notebooks/ct_denoising_training.ipynb   
+```
+## Key Features
 - Patch-based training and reconstruction
 - Overlapping patch strategy
 - U-Net architecture for medical imaging
 - Full-image reconstruction pipeline
+- Quantitative + visual evaluation
 
-📌 Future Improvements
-- Add PSNR and SSIM evaluation
+## Limitations
+- Synthetic Gaussian noise (not real low-dose CT noise)
+- Small dataset (100 images)
+- 2D slice-based approach
+
+## Future Improvements
 - Compare with baseline filters
-- Improve architecture (Attention U-Net)
+- Improve architecture (Attention U-Net/Residual U-Net)
 - Extend to real low-dose CT datasets
+- 3D Volumetric Reconstruction
 
-👩‍💻 Author
+## Author
 
-- Biomedical Engineering Graduate               
+- Biomedical Engineering & CS Graduate               
 - Focused on AI in Healthcare & Medical Imaging
