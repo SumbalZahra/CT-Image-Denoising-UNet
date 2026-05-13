@@ -1,18 +1,18 @@
 # CT Image Denoising using U-Net (Deep Learning)
 
-## 📌 Overview
+## Overview
 This project presents a deep learning-based approach for denoising low-dose CT images using a U-Net architecture. The model is trained to reconstruct high-quality CT images from synthetically corrupted inputs, simulating realistic low-dose imaging conditions.
 
 The pipeline is designed to reflect a research-oriented workflow, including data preprocessing, noise simulation, patch-based learning, and full-image reconstruction.
 
 ---
 
-## 🧠 Problem Statement
+## Problem Statement
 Reducing radiation exposure in CT imaging (low-dose CT) introduces significant noise, which degrades diagnostic quality. The objective of this project is to develop a deep learning model capable of restoring image quality while preserving anatomical structures.
 
 ---
 
-## ⚙️ Methodology
+## Methodology
 
 ### 1. Data Preparation
 - CT images loaded in TIFF format  
@@ -38,11 +38,11 @@ Reducing radiation exposure in CT imaging (low-dose CT) introduces significant n
 
 ---
 
-## 📊 Results
+## Results
 
 ### Visual Results
 
-## 📈 Evaluation Metrics
+## Evaluation Metrics
 
 | Metric | Before (Noisy) | After (Denoised) | Improvement |
 |--------|----------------|------------------|------------|
@@ -56,7 +56,7 @@ Reducing radiation exposure in CT imaging (low-dose CT) introduces significant n
 | ![](results/noisy.png) | ![](results/output.png) | ![](results/clean.png) |
 
 ---
-## 🧠 Interpretation
+## Interpretation
 
 - Significant noise reduction is observed, with PSNR improving by approximately 13 dB.
 - Strong structural preservation is achieved, as indicated by the SSIM increase toward 1.
@@ -69,7 +69,7 @@ Overall, the model:
 - reconstructs high-quality, diagnostically meaningful images  
 ---
 
-## 🚀 How to Run
+## How to Run
 
 ```bash
 git clone https://github.com/your-username/CT-Image-Denoising-U-Net.git  
