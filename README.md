@@ -1,4 +1,4 @@
-# CT Image Denoising using U-Net (Deep Learning)
+# Low-Dose CT Image Denoising Using Patch-Based U-Net with Overlapping Reconstruction
 
 ## Overview
 This project presents a deep learning-based approach for denoising low-dose CT images using a U-Net architecture. The model is trained to reconstruct high-quality CT images from synthetically corrupted inputs, simulating realistic low-dose imaging conditions.
@@ -44,10 +44,10 @@ Reducing radiation exposure in CT imaging (low-dose CT) introduces significant n
 
 ## Evaluation Metrics
 
-| Metric | Before (Noisy) | After (Denoised) | Improvement |
+| Metric | Before (Noisy) | After (Denoised) | Improvement | Meaning |
 |--------|----------------|------------------|------------|
-| PSNR (dB) | 26.84 | 39.74 | +12.9 dB |
-| SSIM | 0.40 | 0.95 | +0.55 |
+| PSNR (dB) | 26.84 | 39.74 | +12.9 dB | noise drastically reduced |
+| SSIM | 0.40 | 0.95 | +0.55 | structured recovered |
 
 ---
 
@@ -75,9 +75,11 @@ Overall, the model:
 git clone https://github.com/your-username/CT-Image-Denoising-U-Net.git  
 cd CT-Image-Denoising-U-Net              
 pip install -r requirements.txt
-Run notebook:
-   notebooks/ct_denoising_training.ipynb   
 ```
+
+Run notebook:
+- Open notebooks/ct_denoising_training.ipynb   
+
 ## Key Features
 - Patch-based training and reconstruction
 - Overlapping patch strategy
@@ -86,9 +88,10 @@ Run notebook:
 - Quantitative + visual evaluation
 
 ## Limitations
-- Synthetic Gaussian noise (not real low-dose CT noise)
-- Small dataset (100 images)
+- Used Synthetic Gaussian noise (not real low-dose CT noise)
+- Small dataset (100 Tiff images)
 - 2D slice-based approach
+- No real clinical validation
 
 ## Future Improvements
 - Compare with baseline filters
