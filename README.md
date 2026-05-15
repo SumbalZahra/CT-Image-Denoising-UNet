@@ -45,7 +45,7 @@ Reducing radiation exposure in CT imaging (low-dose CT) introduces significant n
 ## Evaluation Metrics
 
 | Metric | Before (Noisy) | After (Denoised) | Improvement | Meaning |
-|--------|----------------|------------------|------------|
+|--------|----------------|------------------|------------|---------|
 | PSNR (dB) | 26.84 | 39.74 | +12.9 dB | noise drastically reduced |
 | SSIM | 0.40 | 0.95 | +0.55 | structured recovered |
 
