@@ -71,6 +71,12 @@ Overall, the model:
 git clone https://github.com/your-username/CT-Image-Denoising-U-Net.git  
 cd CT-Image-Denoising-U-Net              
 pip install -r requirements.txt
+
+Dataset:
+Download from Kaggle:
+import kagglehub
+path = kagglehub.dataset_download("mohamedhanyyy/chest-ctscan-images")
+print("Path to dataset files:", path)
 ```
 
 Run notebook:
