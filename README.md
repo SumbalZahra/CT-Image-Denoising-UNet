@@ -50,7 +50,7 @@ Reducing radiation exposure in CT imaging (low-dose CT) introduces significant n
 | SSIM | 0.40 | 0.95 | +0.55 | structured recovered |
 
 ---
-| ![](results/Visual_result_comparison.png)|
+![](results/Visual_result_comparison.png)
 ---
 ## Interpretation
 
