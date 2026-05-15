@@ -53,7 +53,7 @@ Reducing radiation exposure in CT imaging (low-dose CT) introduces significant n
 
 | Noisy Input | Model Output | Ground Truth |
 |------------|-------------|--------------|
-| ![](results/noisy.png) | ![](results/output.png) | ![](results/clean.png) |
+| ![](results/Visual_result_comparison.png)|
 
 ---
 ## Interpretation
